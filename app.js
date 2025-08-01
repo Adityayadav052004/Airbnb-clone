@@ -64,6 +64,9 @@ const sessionOptions={
 // app.get("/", (req, res) => {
 //     res.send("hi i am aditya");
 // });
+app.get('/', (req, res) => {
+  res.redirect('/listings');
+});
 
 
 app.use(session(sessionOptions));
